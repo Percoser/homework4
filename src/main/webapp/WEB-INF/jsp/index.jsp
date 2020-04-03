@@ -28,7 +28,6 @@
 
 <table>
     <tr>
-        <th>ID</th>
         <th>Product Description</th>
         <th>Price</th>
         <th>Color</th>
@@ -36,9 +35,8 @@
     <c:forEach var = "listitem" items = "${productList}">
         <tr>
 
-            <td>${listitem.id}</td>
             <td>${listitem.description}</td>
-            <td>${listitem.price}</td>
+            <td>$${listitem.price}</td>
             <td>${listitem.color}</td>
 
             <td></td>
